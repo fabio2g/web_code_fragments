@@ -1,0 +1,41 @@
+:root {
+    --color-1: #fefefe;
+    --color-2: #15d36c;
+    --color-3: #15202b;
+    --color-4: #1d2a35;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--color-3);
+}
+
+.icon--bar {
+    display: flex;
+    width: 60%;
+    margin: auto;
+    background: var(--color-4);
+    overflow: auto;
+}
+
+.icon--bar a {
+    width: 25%;
+    font-size: 36px;
+    text-align: center;
+    color: var(--color-1);
+    padding: 12px 0;
+    transition: all 0.3s ease;
+}
+
+.icon--bar a:hover {
+    background: #000;
+}
+
+.active {
+    background: var(--color-2);
+}

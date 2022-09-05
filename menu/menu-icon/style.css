@@ -1,0 +1,53 @@
+:root {
+    --color-1: #fefefe;
+    --color-2: #15d36c;
+    --color-3: #15202b;
+    --color-4: #1d2a35;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background: var(--color-3);
+    color: var(--color-2);
+    text-align: center;
+}
+
+h3 {
+    margin: 10px;
+}
+
+/* Animation button */
+.button--menu {
+    margin: 16px auto;
+    width: fit-content;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+    width: 35px;
+    height: 5px;
+    background: var(--color-1);
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-9px, -7px);
+    transform: rotate(45deg) translate(-9px, -7px);
+}
