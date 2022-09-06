@@ -1,0 +1,64 @@
+:root {
+    --color-1: #fefefe;
+    --color-2: #15d36c;
+    --color-3: #15202b;
+    --color-4: #1d2a35;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--color-3);
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #FFFFFF;
+}
+
+.container {
+    display: flex;
+    max-width: 1600px;
+ 
+}
+
+.left {
+    width: 35%;
+    padding: 15px 0;
+    background: #CCCCCC;
+}
+
+.left h2 {
+    padding-left: 8px;
+}
+
+.right {
+    width: 65%;
+    padding: 15px;
+    background: #DDDDDD;
+}
+
+#mySearch {
+    width: 100%;
+    font-size: 18px;
+    padding: 11px;
+    border: 1px solid #ddd;
+    outline: none;
+}
+
+#myMenu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#myMenu li a {
+    padding: 12px;
+    text-decoration: none;
+    color: #000;
+    display: block;
+}
+
+#myMenu li a:hover {
+    background: var(--color-2);
+}
